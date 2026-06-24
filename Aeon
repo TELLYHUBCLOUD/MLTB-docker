@@ -13,10 +13,10 @@ echo "Installing packages..."
 apt-get update
 apt-get install -y --no-install-recommends \
     apt-utils \
-    python3.13 \
-    python3.13-dev \
-    libpython3.13 \
-    libpython3.13-dev \
+    python3.12 \
+    python3.12-dev \
+    libpython3.12 \
+    libpython3.12-dev \
     git \
     curl \
     wget \
@@ -60,10 +60,10 @@ apt-get install -y --no-install-recommends \
     zlib1g-dev \
     libboost-all-dev
 
-ln -sf /usr/bin/python3.13 /usr/bin/python3
-ln -sf /usr/bin/python3.13 /usr/bin/python
+ln -sf /usr/bin/python3.12 /usr/bin/python3
+ln -sf /usr/bin/python3.12 /usr/bin/python
 
-curl -sS https://bootstrap.pypa.io/get-pip.py | python3.13
+curl -sS https://bootstrap.pypa.io/get-pip.py | python3.12
 
 python3 -m pip install \
     --no-cache-dir \
